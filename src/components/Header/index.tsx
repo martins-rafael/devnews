@@ -1,25 +1,27 @@
-import Link from 'next/link';
-
 import { SignInButton } from '../SignInButton';
+import { ActiveLink } from '../ActiveLink';
 
 import styles from './styles.module.scss';
 
-export const Header = () => (
-  <header className={styles.headerContainer}>
-    <div className={styles.headerContent}>
-      <img src="/images/logo.svg" alt="ig.news" />
+export const Header = () => {
 
-      <nav>
-        <Link href="/">
-          <a className={styles.active}>Home</a>
-        </Link>
+  return (
+    <header className={styles.headerContainer}>
+      <div className={styles.headerContent}>
+        <img src="/images/logo.svg" alt="ig.news" />
 
-        <Link href="/posts" prefetch>
-          <a>Posts</a>
-        </Link>
-      </nav>
+        <nav>
+          <ActiveLink href="/" activeClassName={styles.active}>
+            <a>Home</a>
+          </ActiveLink>
 
-      <SignInButton />
-    </div>
-  </header>
-);
+          <ActiveLink href="/posts" activeClassName={styles.active} prefetch>
+            <a>Posts</a>
+          </ActiveLink>
+        </nav>
+
+        <SignInButton />
+      </div>
+    </header>
+  );
+}
