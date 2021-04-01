@@ -38,5 +38,31 @@
         margin: 0.5rem 0;
       }
     }
+
+    &.previewContent {
+      background: linear-gradient(var(--gray-100), transparent);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.continueReading {
+  margin: 4rem 0 2rem;
+  padding: 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+  background: var(--gray-850);
+  border-radius: 100px;
+
+  a {
+    margin-left: 0.5rem;
+    color: var(--yellow-500);
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
