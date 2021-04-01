@@ -28,7 +28,7 @@ const Posts = ({ posts }: PostsProps) => {
       <main className={styles.container}>
         <div className={styles.posts}>
           {posts.map(post => (
-            <Link key={post.slug} href={`/posts/${post.slug}`}>
+            <Link key={post.slug} href={`/posts/preview/${post.slug}`}>
               <a>
                 <time>{post.updatedAt}</time>
                 <strong>{post.title}</strong>
