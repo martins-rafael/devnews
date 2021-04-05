@@ -30,7 +30,7 @@ const PostPreview = ({ post }: PostPreviewProps) => {
   return (
     <>
       <Head>
-        <title>{post.title} | Ignews</title>
+        <title>{post.title} | dev.news</title>
       </Head>
 
       <main className={styles.container}>

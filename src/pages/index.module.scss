@@ -1,11 +1,15 @@
 .contentContainer {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   align-items: center;
-  justify-content: space-between;
   margin: 0 auto;
   padding: 0 2rem;
-  max-width: 1120px;
-  height: calc(100vh - 5rem);
+  max-width: 1200px;
+  height: 100vh;
+
+  img {
+    width: 100%;
+  }
 }
 
 .hero {

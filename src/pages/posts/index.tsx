@@ -22,7 +22,7 @@ const Posts = ({ posts }: PostsProps) => {
   return (
     <>
       <Head>
-        <title>Posts | Ignews</title>
+        <title>Posts | dev.news</title>
       </Head>
 
       <main className={styles.container}>

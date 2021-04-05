@@ -17,22 +17,22 @@ const Home = ({ product }: HomeProps) => {
   return (
     <>
       <Head>
-        <title>Home | ig.news</title>
+        <title>Home | dev.news</title>
       </Head>
 
       <main className={styles.contentContainer}>
         <section className={styles.hero}>
-          <span>👏 Hey, welcome!</span>
-          <h1>News about <br /> the <span>React</span> world.</h1>
+          <span>👏 Fala dev!</span>
+          <h1>Novidades <br /> do mundo da <span>programação</span>.</h1>
           <p>
-            Get access to all the publications <br />
-            <span>for {product.amount} month</span>
+            Tenho acesso à todas publicações <br />
+            <span>por {product.amount}/mês</span>
           </p>
 
           <SubscribeButton priceId={product.priceId} />
         </section>
 
-        <img src="/images/avatar.svg" alt="Girl coding" />
+        <img src="/images/avatar.svg" alt="Girl reading" />
       </main>
     </>
   );

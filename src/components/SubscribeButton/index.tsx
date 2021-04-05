@@ -41,7 +41,7 @@ export const SubscribeButton = ({ priceId }: SubscribeButtonProps) => {
       type="button"
       onClick={handleSubscribe}
     >
-      Subscribe now
+      Assine agora
     </button>
   );
 }

@@ -1,6 +1,13 @@
 .headerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 5rem;
-  border-bottom: 1px solid var(--gray-800);
+  background: #13141fcc;
+  box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid var(--blue-gray-850);
+  backdrop-filter: blur(30px);
 }
 
 .headerContent {
@@ -10,6 +17,10 @@
   padding: 0 1rem;
   max-width: 1120px;
   height: 5rem;
+
+  h1 {
+    color: var(--gray-100);
+  }
 
   nav {
     margin-left: 5rem;
@@ -44,7 +55,7 @@
         left: 0;
         width: 100%;
         height: 3px;
-        background: var(--yellow-500);
+        background: var(--purple-300);
         border-radius: 3px 3px 0 0;
       }
     }

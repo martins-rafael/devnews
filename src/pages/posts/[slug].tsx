@@ -19,7 +19,7 @@ const Post = ({ post }: PostProps) => {
   return (
     <>
       <Head>
-        <title>{post.title} | Ignews</title>
+        <title>{post.title} | dev.news</title>
       </Head>
 
       <main className={styles.container}>
