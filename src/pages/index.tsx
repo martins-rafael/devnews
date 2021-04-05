@@ -25,7 +25,7 @@ const Home = ({ product }: HomeProps) => {
           <span>👏 Fala dev!</span>
           <h1>Novidades <br /> do mundo da <span>programação</span>.</h1>
           <p>
-            Tenho acesso à todas publicações <br />
+            Tenha acesso à todas publicações <br />
             <span>por {product.amount}/mês</span>
           </p>
 
