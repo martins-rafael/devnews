@@ -62,6 +62,8 @@ cd devnews
 # Instale as dependências
 yarn install
 
+# Configure suas variáveis de ambiente conforme as instruções no arquivo .env.local.example
+
 # Rode o aplicação
 yarn dev
 
