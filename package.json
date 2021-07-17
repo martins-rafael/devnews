@@ -30,6 +30,7 @@
     "@types/prismic-dom": "^2.1.1",
     "@types/react": "^17.0.3",
     "babel-jest": "^27.0.6",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^27.0.6",
     "jest-dom": "^4.0.0",
     "sass": "^1.32.8",
