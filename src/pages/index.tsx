@@ -9,7 +9,7 @@ import styles from './index.module.scss';
 interface HomeProps {
   product: {
     priceId: string;
-    amount: number;
+    amount: string;
   }
 }
 
@@ -29,7 +29,7 @@ const Home = ({ product }: HomeProps) => {
             <span>por {product.amount}/mês</span>
           </p>
 
-          <SubscribeButton priceId={product.priceId} />
+          <SubscribeButton />
         </section>
 
         <img src="/images/avatar.svg" alt="Girl reading" />
