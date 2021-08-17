@@ -6,7 +6,7 @@ import { SignInButton } from '.';
 jest.mock('next-auth/client');
 
 describe('SignInButton component', () => {
-  it('shold render correctly when user is not authenticated', () => {
+  it('should render correctly when user is not authenticated', () => {
     const useSessionMocked = mocked(useSession);
 
     useSessionMocked.mockReturnValueOnce([null, false]);
@@ -16,7 +16,7 @@ describe('SignInButton component', () => {
     expect(screen.getByText('Entrar com GitHub')).toBeInTheDocument();
   });
 
-  it('shold render correctly when user is authenticated', () => {
+  it('should render correctly when user is authenticated', () => {
     const useSessionMocked = mocked(useSession);
 
     useSessionMocked.mockReturnValue([
